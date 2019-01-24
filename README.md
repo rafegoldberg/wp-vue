@@ -1,4 +1,4 @@
-# wp-vue-theme
+# WP Vue
 
 ## Setup
 ```
