@@ -1,10 +1,13 @@
-<?#=wordpress
-  # configuration
+<?#=Wordpress configuration
+  #
   include "php/api/cors.php";
-  include "php/types/project.php";
+  include "php/wp/type-project.php";
+  include "php/wp/tax-tools.php";
+  include "php/wp/tax-roles.php";
   ?>
-<?#=link Vue scripts
-  # and stylesheets
+
+<?#=UI scripts & styles
+  #
   function vue(){
     $DIST = "http://localhost:8080/";
     
