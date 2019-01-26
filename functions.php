@@ -1,21 +1,15 @@
-<?#=Wordpress configuration
+<?#=WP Config
   #
-  include "php/api/cors.php";
-  include "php/wp/type-project.php";
-  include "php/wp/tax-tools.php";
-  include "php/wp/tax-roles.php";
+  include "php/wp/api/cors.php";
+  // include "php/wp/api/request.php";
   ?>
-
-<?#=UI scripts & styles
+<?#=Types & Terms
   #
-  function vue(){
-    $DIST = "http://localhost:8080/";
-    
-    wp_enqueue_script( 'UiScript', "$DIST/app.js", [], false, true );
-    wp_localize_script('UiScript','WP_API_Settings',[
-      'endpoint' => esc_url_raw(rest_url()),
-      'nonce' => wp_create_nonce('wp_rest')
-    ]);
-  }
-  add_action( 'wp_enqueue_scripts', 'vue' );
+  include "php/type/project.php";
+  include "php/term/tools.php";
+  include "php/term/roles.php";
+  ?>
+<?#=Scripts & Styles
+  #
+  include "php/link-vue.php"
   ?>

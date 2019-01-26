@@ -8,11 +8,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   
   <!-- External  -->
-  <script>
-    UiImportPath = "http://localhost:8080/"
-  </script>
   <script src="//unpkg.com/wpapi@1.1.2/browser/wpapi.min.js"></script>
-
+  <script>
+    var
+    UiImportPath = "http://localhost:8080/";
+  </script>
   <?wp_head()?>
 </head>
 <body <?body_class()?>>
@@ -29,10 +29,6 @@
       </article>
       <? endwhile; endif ?>
     </div>
-
-  <?if( false )
-    get_template_part("path/file", "name"); // path/file-name.php
-    ?>
 
   <?wp_footer()?>
 </body>

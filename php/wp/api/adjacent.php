@@ -1,6 +1,6 @@
 <?
 // Add filter to respond with next and previous post in post response.
-function API_addNextPrev(){
+function api_field_adjacent(){
   register_rest_field('post','adjacent',[
     'get_callback'=> function($post){
       global $post;
@@ -24,5 +24,5 @@ function API_addNextPrev(){
     'schema'=> null,
   ]);
 }
-add_action( 'rest_api_init', 'API_addNextPrev' );
+add_action( 'rest_api_init', 'api_field_adjacent' );
 ?>
