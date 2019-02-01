@@ -50,20 +50,20 @@ API.then(WP =>
 );
 
 /**
- * Export & Alias
+ * Exports
  */
-
-export default API;
-
-if (process.env.NODE_ENV == "development"){
-  API.then(wp=>( window.ƒ = wp ))
-}
-
+export default API
 export let mixin = {
   asyncComputed: {
-    async WP() {
+    async wp() {
       let WP = await API;
       return WP;
     }
   }
 }
+
+/**
+ * Global Alias
+ */
+if (process.env.NODE_ENV == "development")
+  API.then(wp=>( window.ƒ = wp ))

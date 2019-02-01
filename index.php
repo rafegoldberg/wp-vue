@@ -17,17 +17,18 @@
 </head>
 <body <?body_class()?>>
 
-    <div id="app">
-      <? if( have_posts() ): while( have_posts() ): the_post() ?>
+    <div id="ssr-content" hidden>
+      <?if(have_posts()): while(have_posts()): the_post()?>
       <article>
         <header>
           <h2><?the_title()?></h2>
         </header>
-        <section>
-          <?the_content()?>
-        </section>
+        <section><?the_content()?></section>
       </article>
-      <? endwhile; endif ?>
+      <?endwhile; endif?>
+    </div>
+
+    <div id="app">
     </div>
 
   <?wp_footer()?>

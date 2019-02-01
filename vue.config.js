@@ -1,5 +1,5 @@
 const
-RootURL = '/',
+RootURL = typeof window!='undefined' && location.host=='192.168.64.2' ? '/rgd3' : '/',
 WpkPath = require('webpack-require-from'),
 resolve = (p)=> require('path').resolve(__dirname, p)
 
