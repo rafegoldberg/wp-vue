@@ -137,8 +137,6 @@ blockquote {
 
 <style lang="scss" scoped>
 .App {
-  margin-left: calc(-1 * env(safe-area-inset-left));
-  margin-right: calc(-1 * env(safe-area-inset-right));
   padding-left: env(safe-area-inset-left);
   padding-right: env(safe-area-inset-right);
   & {
