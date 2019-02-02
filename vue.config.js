@@ -1,11 +1,13 @@
 const
-RootURL = typeof window!='undefined' && location.host=='192.168.64.2' ? '/rgd3' : '/',
+RootURL = '/',
+ProdEnv = process.env.NODE_ENV === 'production',
 WpkPath = require('webpack-require-from'),
 resolve = (p)=> require('path').resolve(__dirname, p)
 
 module.exports = {
   publicPath: RootURL,
-  
+  assetsDir: ProdEnv ? '/rgd3/wp-content/themes/wp-vue/dist/' : '.',
+
   filenameHashing: false,
   configureWebpack: {
     devtool: 'source-map',
@@ -29,7 +31,10 @@ module.exports = {
     },
   },
   
-  css: {sourceMap: true},
+  css: {
+    sourceMap: true,
+    extract: false,
+  },
   
   lintOnSave: false,
 };

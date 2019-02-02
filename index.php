@@ -9,9 +9,10 @@
   
   <!-- External  -->
   <script src="//unpkg.com/wpapi@1.1.2/browser/wpapi.min.js"></script>
+  
   <script>
     var
-    UiImportPath = "http://localhost:8080/";
+    UiImportPath = "/rgd3/wp-content/themes/wp-vue/dist/";
   </script>
   <?wp_head()?>
 </head>

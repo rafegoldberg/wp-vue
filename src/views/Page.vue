@@ -1,8 +1,8 @@
 <template>
   <article id=page v-if="!page.loading">
-    <header v-if="$route.name!=='Home'">
+    <!-- <header v-if="$route.name!=='Home'">
       <h1 v-html="page.title.rendered"/>
-    </header>
+    </header> -->
     <section v-html="page.content.rendered"/>
   </article>
 </template>
