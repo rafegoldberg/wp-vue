@@ -31,6 +31,9 @@ export default {
 </script>
 
 <style lang="scss">
+@import url("//use.typekit.net/uko7iww.css");
+@import url("//cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic.min.css");
+
 :root {
   --max: 48em;
 }
@@ -74,6 +77,9 @@ hr {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: factoria;
+  font-weight: 600;
+  letter-spacing: .063em;
   margin: 1rem 0;
   padding: .5rem 0;
   line-height: 1rem;  
@@ -103,9 +109,11 @@ table {
     }
   }
   th {
+    font-family: factoria;
+    letter-spacing: .063em;
     vertical-align: middle;
     font-weight: 900;
-    font-style: italic;
+    // font-style: italic;
     text-align: left;
     text-transform: lowercase;
   }
