@@ -2,8 +2,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Williams Selyem</title>
+  <title>RGD2 • Development & Design</title>
+  <meta name="description" content="Hi, I’m Rafe. I’m a front end web engineer specializing in scalable architecture, design systems, and user experience.">
+  <meta property="og:description" content="Hi, I’m Rafe. I’m a front end web engineer specializing in scalable architecture, design systems, and user experience.">
+  <meta property="og:title" content="RGD2 • Development & Design">
+
   <meta charset="UTF-8">
+  <meta property="og:type" content="website">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   
